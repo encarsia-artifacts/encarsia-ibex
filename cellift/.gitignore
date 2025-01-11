@@ -1,0 +1,7 @@
+generated
+logs
+traces
+statistics
+Bender.lock
+results.txt
+fusesoc.conf
