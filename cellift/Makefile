@@ -166,7 +166,7 @@ RUN_TARGETS = $(RUN_TARGETS_NOTRACE) $(RUN_TARGETS_TRACE) $(RUN_TARGETS_TRACE_FS
 
 $(RUN_TARGETS_TRACE) $(RUN_TARGETS_TRACE_FST): | traces
 $(RUN_TARGETS): run_%: ./build/run_%_0.1/default-verilator/$(TOP_EXECUTABLE_NAME)
-	cd build/run_$*_0.1/default-verilator && $(CELLIFT_META_ROOT)/resourcewrapper $(RESOURCEWRAPPER_TAG) $* run ./$(TOP_EXECUTABLE_NAME)
+	cd build/run_$*_0.1/default-verilator
 
 #
 # Extract Yosys cell statistics
